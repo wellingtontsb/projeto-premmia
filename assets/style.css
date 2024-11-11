@@ -79,6 +79,46 @@ nav a:hover{
 	color: #01663A;
 }
 
+.navbar-list{
+	position: relative;
+}
+
 .navbar-sublist{
+	flex-direction: column;
+	background-color: #FFF;
+	position: absolute;
+	max-width: 140px;
 	display: none;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding-bottom: 0px;
+}
+
+.navbar-sublist li{
+	margin: 5px 10px;
+	border-bottom: 2px solid #F4F4F4;
+	padding: 5px 5px 13px;
+}
+
+.navbar-sublist li:hover{
+	border-bottom: 2px solid #FFBF26;
+}
+
+.navbar-sublist li:last-child{
+	border-bottom: none;
+}
+
+.navbar-sublist li a{
+	font-size: 11px;
+	width: 100%;
+	display: inline-block;
+	font-weight: 500;
+}
+
+.navbar-sublist li a:hover{
+	color: #008B4F;
+}
+
+.float-list:hover > ul{
+	display: flex;
 }
