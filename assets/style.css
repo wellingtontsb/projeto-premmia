@@ -181,3 +181,63 @@ nav a:hover{
 	border: 1px solid #01663A;
 	border-radius: 8px;
 }
+
+.program{
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+
+.program-content{
+	height: 280px;
+	background-color: #008C4F;
+	border-radius: 20px;
+	margin-top: 20px;
+}
+
+.program-title{
+	color: #01663A;
+	font-size: 22px;
+	margin: auto;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.program-area{
+	display: flex;
+	justify-content: space-around;
+}
+
+.program-card{
+	width: 300px;
+	height: 300px;
+	background-color: #FFF;
+	border-radius: 20px;
+	margin-top: 20px;
+	padding: 0 20px;
+}
+
+.program-card--image{
+	width: 100px;
+	height: 100px;
+	background-color: #999;
+	margin: 10px auto 0;
+}
+
+.program-card--title{
+	font-size: 20px;
+	color: #01663A;
+	font-weight: 700;
+	display: flex;
+    align-items: center;
+}
+
+.program-card--title-number{
+	font-size: 70px;
+	color: #FFBF26;
+	margin-right: 10px;
+}
+
+.program-card--text{
+	font-size: 15px;
+	margin-top: 10px;
+}
