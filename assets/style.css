@@ -184,7 +184,6 @@ nav a:hover{
 
 .program{
 	margin-top: 80px;
-	margin-bottom: 100px;
 }
 
 .program-content{
@@ -194,7 +193,8 @@ nav a:hover{
 	margin-top: 20px;
 }
 
-.program-title{
+.program-title,
+.tips-title{
 	color: #01663A;
 	font-size: 22px;
 	margin: auto;
@@ -240,4 +240,34 @@ nav a:hover{
 .program-card--text{
 	font-size: 15px;
 	margin-top: 10px;
+}
+
+.tips{
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.tips-area{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.tip-card{
+	display: flex;
+	align-items: center;
+	width: 300px;
+}
+
+.tip-card--image{
+	width: 80px;
+	height: 120px;
+	background-color: #000;
+	display: flex;
+}
+
+.tip-card--text{
+	color: #01663A;
+	margin-left: 40px;
+	line-height: 25px;
 }
