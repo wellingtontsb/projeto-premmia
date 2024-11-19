@@ -194,7 +194,9 @@ nav a:hover{
 }
 
 .program-title,
-.tips-title{
+.tips-title,
+.score-title,
+.offers-title{
 	color: #01663A;
 	font-size: 22px;
 	margin: auto;
@@ -270,4 +272,96 @@ nav a:hover{
 	color: #01663A;
 	margin-left: 40px;
 	line-height: 25px;
+}
+
+.score{
+	margin-top: 80px;
+}
+
+.score-area{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.score-area--card{
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	width: 150px;
+}
+
+.score-area--image{
+	width: 50px;
+	height: 50px;
+	background-color: green;
+	margin: auto;
+}
+
+.score-content{
+	padding: 20px 10px 0;
+	display: flex;
+	font-size: 14px;
+	align-items: center;
+	font-weight: 500;
+	margin-top: 5px;
+}
+
+.score-content--number{
+	font-size: 40px;
+	font-weight: 700;
+	color: #FFBF26;
+	margin-right: 10px;
+}
+
+.offers{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.offers p{
+	margin: 10px auto;
+}
+
+.offers-area{
+	margin-top: 20px;
+	display: flex;
+	overflow: hidden;
+	height: 250px;
+    align-items: center;
+}
+
+.offers-sliders{
+	display: flex;
+	width: 3300px;
+}
+
+.offers-slide{
+	height: 220px;
+	width: 240px;
+	background-color: #FFF;
+	border-radius: 10px;
+	box-shadow: 0 0 15px #CCC;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+	margin: 0px 18px;
+}
+
+.offers-slide:hover{
+	border: 2px solid #FFBF26;
+}
+
+.offers-slide--image{
+	width: 100px;
+	height: 100px;
+	background-color: #999;
+}
+
+.offers-slide--text{
+	margin-top: 15px;
+	font-weight: 500;
+	color: #01663A;
 }
