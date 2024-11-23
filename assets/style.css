@@ -16,6 +16,7 @@ body{
 	display: flex;
 	width: 1100px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .logo{
@@ -33,7 +34,7 @@ body{
 	border-radius: 8px;
 }
 
-.slider--controls{
+.slider-banner-controls{
 	position: absolute;
 	z-index: 99;
 	width: 85%;
@@ -43,9 +44,23 @@ body{
 	align-items: center;
 }
 
-.slider--control{
+.slider-banner-control{
 	overflow: hidden;
 	cursor: pointer;
+}
+
+.slider-offers-control-left{
+	cursor: pointer;
+	position: absolute;
+	top: calc(400px / 2);
+	left: -20px;
+}
+
+.slider-offers-control-right{
+	cursor: pointer;
+	position: absolute;
+	top: calc(400px / 2);
+	left: 100%;
 }
 
 .prev,
@@ -367,7 +382,7 @@ nav a:hover{
 
 .offers-sliders{
 	display: flex;
-	width: 3300px;
+	padding-left: 10px;
 }
 
 .offers-slide{
@@ -382,10 +397,12 @@ nav a:hover{
 	align-items: center;
 	cursor: pointer;
 	margin: 0px 18px;
+	transition: all ease 0.3s;
 }
 
 .offers-slide:hover{
 	border: 2px solid #FFBF26;
+	transition: none;
 }
 
 .offers-slide--image{
