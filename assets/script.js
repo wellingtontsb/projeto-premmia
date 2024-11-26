@@ -48,7 +48,6 @@ dots.forEach((item, index)=>{
 });
 
 //funcao para mudar os slides automaticamente
-
 /*
 setInterval(()=>{
 	updateMargin();

@@ -49,17 +49,19 @@ body{
 	cursor: pointer;
 }
 
-.slider-offers-control-left{
-	cursor: pointer;
-	position: absolute;
-	top: calc(400px / 2);
-	left: -20px;
-}
-
+.slider-offers-control-left,
 .slider-offers-control-right{
 	cursor: pointer;
 	position: absolute;
 	top: calc(400px / 2);
+	
+}
+
+.slider-offers-control-left{
+	left: -20px;
+}
+
+.slider-offers-control-right{
 	left: 100%;
 }
 
@@ -81,6 +83,24 @@ body{
 	rotate: 45deg;
 }
 
+
+.arrow{
+	width: 20px;
+	height: 20px;
+	border-top: 3px solid #01663A;
+	border-right: 3px solid #01663A;
+	rotate: 45deg;
+}
+
+.small-arrow{
+	display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-left: 7px;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    rotate: 45deg;
+}
 /* classes especificas */
 header{
 	box-shadow: 0 0 7px #999;
@@ -99,9 +119,10 @@ header{
 	position: relative;
 }
 
-.search span{
+.search::before{
+	content: '\1F50D';
 	position: absolute;
-	left: 15px;
+	left: 10px;
 }
 
 .search input{
@@ -186,6 +207,7 @@ nav a:hover{
 
 .float-list:hover > ul{
 	display: flex;
+	z-index: 999;
 }
 
 .banner{
@@ -331,6 +353,7 @@ nav a:hover{
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .score-area--card{
